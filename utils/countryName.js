@@ -25,7 +25,7 @@ const countryName= (country)=>{
           
         }
         else
-        if(country.includes('us')) //in case of USA
+        if(country.toLowerCase().includes('us') || country.toLowerCase().includes('usa') || country.toLowerCase().includes('united states') || country.toLowerCase().includes('united states of america')) //in case of USA
        {
            resolve('us') 
        }
